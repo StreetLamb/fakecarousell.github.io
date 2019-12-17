@@ -352,13 +352,13 @@ body {
   border: 1px solid transparent;
   flex-direction: column;
   transition: all .2s; }
-  @media only screen and (max-width: 20em) {
-    .card {
-      margin: auto; } }
   @media only screen and (max-width: 33.125em) {
     .card {
       flex: 0 0 40%;
       margin-right: auto; } }
+  @media only screen and (max-width: 20em) {
+    .card {
+      margin: auto; } }
   .card:hover {
     border-color: var(--color-grey-light-3);
     box-shadow: var(--shadow-light); }

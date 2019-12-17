@@ -405,13 +405,13 @@
     flex-direction: column;
     transition: all .2s;
 
-    @media only screen and (max-width: $bp-very-smallest) {
-       margin: auto;
-    }
-
     @media only screen and (max-width: $bp-small) {
         flex: 0 0 40%;
         margin-right: auto;
+    }
+
+    @media only screen and (max-width: $bp-very-smallest) {
+       margin: auto;
     }
 
     
