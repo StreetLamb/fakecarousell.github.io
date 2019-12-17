@@ -33,6 +33,7 @@
         align-items: center;
         text-decoration: none;
         color: var(--color-grey-dark-2);
+        outline: none;
         z-index: 100;
 
         @media only screen and (max-width: $bp-smallest) {
@@ -61,7 +62,6 @@
 
     &__type-text:focus ~ &__type-nav-bar,
     &__type-text:active ~ &__type-nav-bar {
-        outline: none;
         visibility: visible;
     }
 
@@ -186,6 +186,7 @@
         font-weight: 600;
         margin-right: 2rem;
         background-color: var(--color-primary);
+        outline: none;
         color: #fff;
         cursor: pointer;
 
@@ -407,6 +408,12 @@
     @media only screen and (max-width: $bp-very-smallest) {
        margin: auto;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        flex: 0 0 40%;
+        margin-right: auto;
+    }
+
     
 
     &:hover {

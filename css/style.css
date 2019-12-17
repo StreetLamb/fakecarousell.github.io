@@ -43,7 +43,7 @@ body {
   border-bottom: var(--line);
   background-color: #fff;
   z-index: 1000; }
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 33.125em) {
     .header {
       position: fixed;
       width: 100vw; } }
@@ -81,6 +81,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: var(--color-grey-dark-2);
+    outline: none;
     z-index: 100; }
     @media only screen and (max-width: 21.875em) {
       .search__type-text {
@@ -103,7 +104,6 @@ body {
           background-image: none; } }
   .search__type-text:focus ~ .search__type-nav-bar,
   .search__type-text:active ~ .search__type-nav-bar {
-    outline: none;
     visibility: visible; }
   .search__type-nav-bar {
     background-color: #fff;
@@ -160,7 +160,7 @@ body {
   @media only screen and (max-width: 65.625em) {
     .user-nav {
       font-size: 1.2rem; } }
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 33.125em) {
     .user-nav {
       font-size: 1.6rem;
       margin-right: 0;
@@ -168,7 +168,7 @@ body {
   @media only screen and (max-width: 21.875em) {
     .user-nav {
       font-size: 1rem; } }
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 33.125em) {
     .user-nav__register {
       display: none; } }
   .user-nav__register, .user-nav__login {
@@ -189,6 +189,7 @@ body {
     font-weight: 600;
     margin-right: 2rem;
     background-color: var(--color-primary);
+    outline: none;
     color: #fff;
     cursor: pointer; }
     .user-nav__sell-button:hover {
@@ -212,7 +213,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 100%; }
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 33.125em) {
     .top-nav {
       display: none; } }
   .top-nav__item {
@@ -354,6 +355,10 @@ body {
   @media only screen and (max-width: 20em) {
     .card {
       margin: auto; } }
+  @media only screen and (max-width: 33.125em) {
+    .card {
+      flex: 0 0 40%;
+      margin-right: auto; } }
   .card:hover {
     border-color: var(--color-grey-light-3);
     box-shadow: var(--shadow-light); }
@@ -372,10 +377,10 @@ body {
   .card__user-name {
     font-size: 1.5rem;
     font-weight: 600; }
-    @media only screen and (max-width: 34.375em) {
+    @media only screen and (max-width: 33.125em) {
       .card__user-name {
         font-size: 1rem; } }
-    @media only screen and (max-width: 34.375em) {
+    @media only screen and (max-width: 33.125em) {
       .card__user-name {
         font-size: .7rem; } }
     @media only screen and (max-width: 20em) {
@@ -383,7 +388,7 @@ body {
         font-size: 1.5rem; } }
   .card__time {
     font-size: 1.2rem; }
-    @media only screen and (max-width: 34.375em) {
+    @media only screen and (max-width: 33.125em) {
       .card__time {
         font-size: .5rem; } }
     @media only screen and (max-width: 20em) {
@@ -400,7 +405,7 @@ body {
       .card__image {
         height: 20rem;
         width: 20rem; } }
-    @media only screen and (max-width: 34.375em) {
+    @media only screen and (max-width: 33.125em) {
       .card__image {
         height: 12rem;
         width: 12rem; } }
@@ -420,7 +425,7 @@ body {
     flex-direction: column; }
   .card__title, .card__price, .card__condition {
     font-size: 1.5rem; }
-    @media only screen and (max-width: 34.375em) {
+    @media only screen and (max-width: 33.125em) {
       .card__title, .card__price, .card__condition {
         font-size: 1rem; } }
     @media only screen and (max-width: 21.875em) {
