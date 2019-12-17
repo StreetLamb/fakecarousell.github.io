@@ -80,7 +80,8 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--color-grey-dark-2); }
+    color: var(--color-grey-dark-2);
+    z-index: 100; }
     @media only screen and (max-width: 21.875em) {
       .search__type-text {
         display: none; } }
@@ -100,7 +101,8 @@ body {
           mask-image: url(../img/chevron-thin-right.svg);
           mask-size: cover;
           background-image: none; } }
-  .search__type-text:focus + .search__type-nav-bar {
+  .search__type-text:focus ~ .search__type-nav-bar,
+  .search__type-text:active ~ .search__type-nav-bar {
     outline: none;
     visibility: visible; }
   .search__type-nav-bar {
@@ -130,6 +132,7 @@ body {
     border: none;
     padding: 1rem .5rem;
     width: 70%;
+    border-radius: 0;
     transition: all 0.2s; }
     .search__input:focus {
       outline: none;
@@ -431,8 +434,12 @@ body {
     width: 4rem;
     margin-right: auto;
     font-size: 2rem;
-    color: #b90000;
     margin-top: 1rem;
     text-decoration: none; }
-    .card__like:hover {
+  .card__like-icon {
+    height: 2rem;
+    width: 2rem;
+    transition: background-color .2s; }
+    .card__like-icon:hover {
+      fill: red;
       animation: pulsate 1s infinite; }
